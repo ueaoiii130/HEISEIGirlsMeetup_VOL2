@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    margin: 0 auto;
+/*    margin: 0 auto;*/
 /*    font-family: 'Helvetica Neue', "Arial", "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",sans-serif;*/
     
     font-family:'KabelLTStd', "游ゴシック体", "Yu Gothic", "YuGothic", 'Josefin Sans', sans-serif;
@@ -30,7 +30,7 @@ a{
 }
 h2{
     font-size: 2.4em;
-    margin-top : 4em;
+    margin-top : 2em;
     color: #111;
     letter-spacing: 0.08em;
     
@@ -39,7 +39,7 @@ h3{
     font-size: 0.8em;
     font-weight: normal;
     color: #111;
-    margin-bottom: 6em;
+    margin-bottom: 2em;
 }
 
 li{
@@ -51,6 +51,34 @@ li{
     height: 100vh;
     
 }
+
+
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+
+
+
+/*fuwat*/
+
 .fuwatAnime {
      -webkit-animation-fill-mode:both;
      -ms-animation-fill-mode:both;
@@ -71,6 +99,7 @@ li{
      0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
      100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
+
 
 clear{
     clear: both;
@@ -174,18 +203,19 @@ a span {
     position: relative;
     height: 100%;
     display: block;
+    padding-bottom: 4em;
 }
 #about-m-shita{
     color: #fff;
     font-size: 10vw;
     opacity: 0.6;
-    padding-top: 68vh;
+    padding-top: 84vh;
     letter-spacing: 0.12em;
 }
 
 #about-m-ue{
     position: absolute;
-    top: 80vh;
+    top: 94vh;
     color: #000;
     font-size: 2vw;
     font-size: 2vw;
@@ -230,7 +260,7 @@ p .txt-white2{
     height: 40vw;
     max-height: 450px;
     min-height: 320px;
-    position: absolute;
+    position: fixed;
     top: 300px;
     left: 0;
     background: #D68592;
@@ -253,57 +283,195 @@ p .txt-white2{
     font-size: 1.0vw;
     text-align: left;
     z-index: 2;
+    font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+}
+
+
+
+.contents-txt{
+    width: 80%;
+}
+.contents-txt p{
+    font-size: 0.84em;
+    line-height: 2.2em;
+}
+.contents-txt span{
+    font-size: 1.8em;
+    line-height: 2.2em;
+    letter-spacing: 0.24em;
 }
 
 
 .contents{
-/*    padding-top: 4em;*/
+    margin: 40px 0;
+    position: relative;
+    height: 100vh;
+    
+}
+.contents p{
+    font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+    line-height: 2.4em;
+    font-size: 0.86em;
+}
+
+
+.contents-bg{
+    margin-left: 40px; 
+    content: "";
     width: 100%;
+    height: 40vw;
+    max-height: 450px;
+    min-height: 320px;
+    position: fixed;
+    top: 240px;
+    left: 0;
+    background: #D68592;
+    z-index: -1;
 }
 .contents-txt{
-    width: 80%;
-    margin: 0 auto;
+    padding-top: 132px;
+    position: fixed;
+    left: 4vw;
+    top: -0.8vh;
+}
+
+.contents-img img{
+    width: 50vw;
+    float: right;
+    z-index: 1;
+}
+
+.contents-title{
+    font-size: 2em;
+    font-weight: bold;
 }
 .contents-txt p{
-    line-height: 1.2em;
-    font-size: 0.84em;
-    line-height: 2.2em;
+    line-height: 2.6em;
+    font-size: 1.0vw;
+    text-align: left;
+    z-index: 2;
+    font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
 }
 
 
 
 
+
+
+/*開催概要*/
 
 .place{
  width: 100%;
- margin: 0 6vw; 
- position: relative;
 }
 
 .access-google-map{
-    width: 46%;
-    float: left;
+    width: 40%;
+    display: inline-block;
+
 }
-.place-detail{
+.place-txt{
     text-align: left;
     font-size: 0.8em;
     width: 30%;
-    width: 30%;
+    display: inline-block;
+    padding: 2em;
+}
+.place-txt p{
+    line-height:1.8em;
+}
+.place-txt span{
+    font-size: 1.6em;
+    padding-bottom: 1.4em;
 }
 
+
+/*ゲスト*/
+.guest{
+    padding-bottom: 4em;
+    padding-top: 0.3em;
+}
+.guest h2{
+    font-size: 2.4em;
+    margin-top: 1em;
+    color: #111;
+    letter-spacing: 0.08em;
+}
+.guest-content{
+    width: 80vw;
+    content: "";
+    background: #D68592;
+    display: flex;
+    padding: 10vh 14vw;
+}
+.guest-prof{
+    width: 18vw;
+    padding: 0 3vw;
+}
+.guest-prof img{
+    width: 16vw;
+}
+.guest-prof p{
+    padding-top: 1.2em;
+    font-size: 0.74vw;
+    font-family:  "游ゴシック体", "Yu Gothic", "YuGothic"; 
+    line-height: 1.4em;
+    letter-spacing: 0.14em;
+}
+
+.guest-prof a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.guest-prof a:hover{
+    color: #eee;
+    font-size: 12px;
+}
+
+.name{
+    font-size: 1.2vw;
+/*    font-weight: bold;*/
+    letter-spacing: 0.2em;
+    color: #111;
+}
+.name-eng{
+    font-size: 1.2vw;
+    font-family: 'Avenir';
+    font-weight: 100;
+    opacity: 0.6;
+    color: #fff;
+}
+
+/*Schedule*/
+
+.schedule-content{
+/*    display: flex;*/
+}
+
+.schedule img{
+    width: 40vw;
+}
+
+.item{
+    line-height: 2.2em;
+    font-size: 1.2vw;
+}
 
 
 /*お申し込みボタン*/
 
+.moushikomi{
+    padding: 40px 40px 40px 16px;
+}
 .button {
-    width: 40%;;
+width: 40%;
   position: relative;
   display: inline-block;
-  padding: .65em 2em;
+  padding: 0.65em 2em;
   border: 2px solid #333;
   color: #333;
  letter-spacing: 0.2em;
-    font-weight: bold;
+font-weight: bold;
   text-decoration: none;
   text-align: center;
   -webkit-transition: .3s ease-in-out;
@@ -342,7 +510,7 @@ footer{
     opacity: 0.5;
 }
 
-* BUTTON 5 */
+/*button*/
 .btn{
   border-radius: 12px;
 }
@@ -416,6 +584,7 @@ footer{
 .socialIcon img{
   width: 32px;
   padding: 2px;
+    margin-bottom:20px; 
 }
 
 
@@ -511,13 +680,15 @@ footer{
     }
 
     h2{
-        font-size: 1.2em;
+        font-size: 2.4em;
         padding: 0;
+        margin-top: 2.4em; 
     }
      
     h3{
-        font-size: 0.4em;
+        font-size: 0.64em;
         margin-top: -0.4em;
+        margin-bottom: 1em;
     }
      
     
@@ -572,19 +743,121 @@ footer{
         background: #D68592;
         z-index: -1;
     }
-    .detail-txt p{
-        line-height: 2.6em;
-        font-size: 1.0vw;
+     
+     .access-google-map{
+    width: 100%;
+    display: inline-block;
+    }
+    .place-txt{
         text-align: left;
-        z-index: 2;
+        font-size: 0.6em;
+        width: 100vw;
+        padding: 0;
     }
-
+    .place-txt p{
+        line-height:1.4em;
+    }
+    .place-txt span{
+        font-size: 1.6em;
+        padding-bottom: 1.4em;
+    }
+     .contents{
+         margin: 0 auto;
+         padding: 4em 0;
+     }
      .contents-txt p{
-        line-height: 1.2em;
         font-size: 0.64em;
-        line-height: 2.2em;
+        line-height: 1.6em;
+    }
+     
+     .contents-img img{
+        min-width: 100%;
+        z-index: 0;
+    }
+     
+     .contents-bg{
+    content: "";
+    width: 100%;
+    height: 40vw;
+    max-height: 450px;
+    min-height: 320px;
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+    background: #D68592;
+    z-index: -1;
+    }
+    .contents-txt{
+        padding-top: 132px;
+        position: absolute;
+        left: 4vw;
+        top: 40vh;
     }
 
+    /*ゲスト*/
+    .guest{
+        padding-bottom: 2em;
+        margin-top: 20vh;
+    }
+    .guest h2{
+        font-size: 2.4em;
+        margin-top: 0;
+        color: #111;
+        letter-spacing: 0.08em;
+    }
+    .guest-content{
+        display: block;
+        content: "";
+        background: #D68592;
+    }
+    .guest-prof{
+        width: 80vw;
+        padding: 0;
+        margin-bottom: 12vh;
+    }
+    .guest-prof img{
+        width: 80vw;
+    }
+    .guest-prof p{
+        padding-top: 0.6vw;
+        font-size: 3.4vw;
+        font-family:  "游ゴシック体", "Yu Gothic", "YuGothic"; 
+        line-height: 1.4em;
+        letter-spacing: 0.14em;
+    }
+
+    .guest-prof a{
+        color: #fff;
+        font-size: 3,2vw;
+    }
+
+    .guest-prof a:hover{
+        color: #eee;
+        font-size: 12px;
+    }
+
+    .name{
+        font-size: 4.2vw;
+    /*    font-weight: bold;*/
+        letter-spacing: 0.2em;
+        color: #111;
+    }
+    .name-eng{
+        font-size: 4vw;
+        font-family: 'Avenir';
+        font-weight: 100;
+        opacity: 0.6;
+        color: #fff;
+    }
+
+    .moushikomi{
+        margin: 10vh 10vh 10vw -4vw;
+    }
+     
+     .schedule img{
+         width: 100vw;
+         min-width: 100%;
+     }
      
     
 

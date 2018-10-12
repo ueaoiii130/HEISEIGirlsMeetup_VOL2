@@ -6,12 +6,35 @@
     
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/favicon.ico">
     <!--  jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--  scrollify  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
     
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    
+    <!--  OGP設定 -->
+    <meta property="og:title" content="HEISEI Girls Meetup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heisei-girlsmeetup.netlify.com/" />
+    <meta property="og:image" content="/assets/img/ogp-img.png" />
+    <meta property="og:site_name" content="HEISEI Girls Meetup" />
+    <meta property="og:description" content="女子の「はたらく」を考える女子大生限定イベント！" />
+
+    <!-- Facebook用設定 -->
+    <!--<meta property="fb:app_id" content="App-ID（15文字の半角数字）" />-->
+    <!--もしくは-->
+    <!--<meta property="fb:admins" content="adminID（15文字の半角数字）" />-->
+
+    <!-- Twitter共通設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/img/ogp-img.png" />
+    <meta name="twitter:creator" content="@HEISEIgirls">
+
+    
     
     <!--  KIERU scroll  -->
     <script>
@@ -66,6 +89,7 @@
            });
           });
         });
+
         
         // セクションごとのスクロール
             var option = {
@@ -77,7 +101,6 @@
             $(function() {
                 $.scrollify(option); // scrollifyの実行
             });
-        });
 
     </script> 
     
@@ -107,9 +130,9 @@
     
     <div class="pink-bg">
         
-        <div class="about">
+        <div class="about fuwat">
             
-        <div class="about-m fuwat">
+        <div class="about-m ">
                 <p id="about-m-shita">
                 Find your SPARK.
                 </p>
@@ -149,7 +172,7 @@
         </div>  <!--  pink-bg  -->
     
     <div class="detail fuwat">
-        <h2>Detail</h2>
+        <h2>About</h2>
         <h3>イベント概要</h3>
         
           
@@ -172,7 +195,7 @@
                     <br>そんな女子大生に届けたい、女子の「はたらく」を考える21世紀最強のガールズイベントです。
 
                     <br>「好きを仕事に」を実現している同世代インフルエンサーや、
-                    <br>SHE取締役福田恵里を交えて行うワークショップを通して、    
+                    <br>SHE取締役福田恵里sを交えて行うワークショップを通して、    
                     <br>今日、あなたの“はじめの一歩“を見つけよう。
                     <br>
                     <br>女子の「好き」が詰まった最高にカワイイSHE Aoyamaで、
@@ -183,79 +206,143 @@
         </div>
     </div>
     
-    <div class="contents fuwat box">
+    <div class="contents fuwat">
         <h2>Contents</h2>
         <h3>コンテンツ</h3>
         
         <div class="contents-txt">
-        
+           <p><span class="contents-title">女子の「はたらく」を考える、２つのコンテンツ</span></p>
+            <p>
+                <br><span>1. ”好き”を見つけるワークショップ</span>
+                <br>就活と合わせてよく聞く、「自己分析」というワード。
+                <br>よくわからないまま飛び込んで行くより、まずは少し、前向きな方向から
+                <br>考え始めてみませんか！
+                <br>簡単なワークショップで、まずは「私の大事にしたいものって何だっけ？」というところから
+                <br>考えてみましょう。
+                <br>
+                <br><span>2.  同世代女子＆女性起業家座談会</span>
+                <br>好きなことで働く。楽しく仕事をする。それが単なる理想ではなくなってきたいま、
+                <br>”何者でもないただの女の子” が、どうやっていまの姿にたどり着いたのか。
+                <br>バイネームで活躍する同世代女子や、女性起業家と「これから」について思いっきり語りましょう！
+            </p>
+            
+        </div>
+        <div class="contents-bg">  
+             
+        </div>
+        <div class="contents-img">
+            <img src="/assets/img/hgm-img-3.jpg" alt="">
             
         </div>
         
+        
     </div>
     
+    <div class="clear">
+        
+    </div>
     <div class="guest fuwat">
         <h2>Guest</h2>
         <h3>ゲスト情報</h3>
         
+        <div class="guest-content">
         <div class="guest-prof">
-            <img src="" alt="">
+            <img src="/assets/img/guest1_honami.jpg" alt="honami">
+            <p><span class="name">久保 帆奈美</span></p>
+            <p><span class="name-eng">Kubo Honami</span></p>
+            <p>株式会社Morning Labo プロデューサー。
+                <br>1996年生まれ、東京都出身。
+                <br>慶應義塾大学環境情報学部４年。
+                <br>在学中から、多種多様なアプリの企画開発・
+                <br>リリースや、サービスデザインに携わる。
+                <br>「若者ならではの視点」を活かしたコンテンツ
+                <br>プロデュースを得意とする。
+                <br>「女子大生ほなみちゃんねる」(kakeru)
+                <br>「ワカモノのトリセツ」(note)
+                <br>
+                <br>Twitter: <a href="https://twitter.com/honami725_?lang=ja" target="_blank">@honami725_ </a>
+            </p>
         </div>
         
         <div class="guest-prof">
-            <img src="" alt="">
+            <img src="/assets/img/guest2-hikari.jpg" alt="hikari">
+            <p><span class="name">朝比奈ひかり</span></p>
+            <p><span class="name-eng">Asahina Hikari</span></p>
+            <p>
+               10代マーケター、パラレルワーカー。
+                <br>昭和女子大学2年。
+                <br>JK時代からカメラマン/イラストレーターとして活躍。
+                <br>大規模女子向けイベント主催を経て、
+                <br>現在は10代マーケターとして活躍。
+                <br>
+                <br>Twitter: <a href="https://twitter.com/Asahina_hikari?lang=ja" target="_blank">@Asahina_hikari</a>
+            </p>
         </div>
         
         <div class="guest-prof">
-            <img src="" alt="">
+            <img src="/assets/img/guesat3-eri.jpg" alt="erisan">
+            <p><span class="name">福田 恵理</span></p>
+            <p><span class="name-eng">Fukuda Eri</span></p>
+            <p>SHE取締役/CCO。
+            <br>自分でアイデアを形にできる女性を増やしたいという想いから、
+               <br>学生時代に女の子のためのWebデザイン講座「DesignGirls」を立ち上げ、
+               <br>累計300人以上の初心者の女性が受講。
+               <br>新卒でリクルートホールディングスに入り、
+               <br>ゼクシィ/リクナビ等のアプリのUXに携わる。
+               <br>2017年7月から独立し、株式会社SHEを設立。
+                <br>
+                <br>Twitter: <a href="https://twitter.com/eri_razapii?lang=ja" target="_blank">@eri_razapii</a>
+
+            </p>
         </div>
-       
+       </div> <!--     guest-content       -->
     </div>
     
     
     <div class="schedule fuwat">
         <h2>Schedule</h2>
         <h3>当日のスケジュール</h3>
+        
+        <div class="schedule-content">
+            <img src="/assets/img/sche01.png" alt="">
+            <img src="/assets/img/sche02.png" alt="">
+        </div>
     </div>
        
     
     <div class="place fuwat">
-        <h2>Place</h2>
+        <h2>Detail</h2>
         <h3>開催概要</h3>
         <div class="clear"></div>
         <div class="access-google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.644002176402!2d139.7108689152583!3d35.66114168019901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b60c1a40001%3A0xe9ac5728b100975c!2sSHElikes!5e0!3m2!1sja!2sus!4v1502819981497" width="80%" height="300" frameborder="0" allowfullscreen="" style="border: 0px;"></iframe>
         </div>
-        <div class="place-detail">
-           <ul class="place-txt">
-               <li>SHE Aoyama</li>
-           </ul>
-           
-           <ul class="place-txt">
-               <li><p>住所</p></li>
-               <li><p>〒107-0062 東京都港区南青山３丁目７−２１</p></li> 
-           </ul>
-           <ul class="place-txt">
-            最寄り駅
-            表参道駅A4出口 徒歩5分
-            教室までのルート
-            A4出口を出て右手の大通り(青山通り)を右方向にずっと進んでいくと、きらぼし銀行があります。きらぼし銀行を超えてすぐの右側に続く小道を入っていただき、200mほど進んでいただくと、K2という美容室が見えます。K2の向かい側にある小道を左に曲がり10mほど進むと右側にある、真っ白な一軒家が会場です。
-            表参道駅から路地入り口までのルート
-           </ul>
-            
-        </div>
         
+           <div class="place-txt">
+               <p><span>SHE Aoyama</span></p>
+              <p>住所</p>
+                <p>〒107-0062 東京都港区南青山３丁目７−２１</p>
+
+            <p>
+            最寄り駅
+        <br>表参道駅A4出口 徒歩5分
+        <br>A4出口を出て右手の大通り(青山通り)を右方向にずっと進んでいくと、きらぼし銀行があります。きらぼし銀行を超えてすぐの右側に続く小道を入っていただき、200mほど進んでいただくと、K2という美容室が見えます。K2の向かい側にある小道を左に曲がり10mほど進むと右側にある、真っ白な一軒家が会場です。
+            
+            </p>
+            </div>
+            <div class="item">
+                <p>◆参加費としておひとり500円をお願いいたします。</p>
+                <p>◆会場は靴を脱いで上がりますので、スリッパなどをぜひお持ちください。</p>
+                <p>◆ワークショップでは筆記用具を用いる場面があります。</p>
+            </div>
     </div>
+    
+    
     <div class="clear"></div>
-    
-    <a class="button clear" href="https://docs.google.com/forms/d/e/1FAIpQLScrsaD6xj4RbqVdOvTKagB82bmMA6p5movvBElJTo1gOaBfPA/viewform" target="_blank">お申し込みはこちらから！</a>
-    
-<!--
-    <div class="message">
-        <h2>Message</h2>
-        <h3>メッセージ</h3>
+    <div class="moushikomi">
+        <a class="button clear" href="https://docs.google.com/forms/d/e/1FAIpQLScrsaD6xj4RbqVdOvTKagB82bmMA6p5movvBElJTo1gOaBfPA/viewform" target="_blank">お申し込みはこちらから！</a>
     </div>
--->
+    
     
     </main>
 <footer>
