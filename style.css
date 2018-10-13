@@ -187,22 +187,24 @@ a span {
   box-sizing: border-box;
 }
 
-.about{
-    text-align: center;
-    position: relative;
-    height: 100%;
-}
+
 
 .pink-bg{
+    content: "";
     background-color: #D68592;
-    display: inline-block;
+    padding-bottom: 80vh;
+}
+.about{
+    content: "";
+    position: relative;
+    height: 200vh;
 }
 
 
-.about-m{
+.about-title{
     position: relative;
-    height: 100%;
     display: block;
+    margin: 40px 0;
     padding-bottom: 4em;
 }
 #about-m-shita{
@@ -228,6 +230,10 @@ a span {
     letter-spacing: 0.2em;
     color: #111;
     padding-bottom: 40px;
+}
+
+.about-txt{
+    height: 80vh;
 }
 p .txt-white{
     color: #fff;
@@ -588,349 +594,355 @@ footer{
 }
 
 
-/*レスポンシブ*/
- @media screen and (max-width: 750px) { 
-     .body {
-        margin: 0 auto;
-        width: 100vw;
-    }
-     header img{
-        z-index: 0;
-        min-width: 180%;
-        min-height: 100%;
-        height: auto;
-        padding-top: 0;
-        margin-right: 20%; 
-     }
-     header h1{
-        font-size: 7.6vw;
-        z-index: 1;
-        position: absolute;
-        top: 24%;
-        letter-spacing: 0.2em;
-        color: #fff;
-     }
-     .about-m{
-         height: 40vh;
-         padding: 0;
-     }
-     header p{
-        font-size: 2vw;
-        z-index: 1;
-        position: absolute;
-        top: 32%;
-        left: 50%;
-        -ms-transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        letter-spacing: 0.2em;
-        color: #fff;
-    }
-    .info{
-         position: absolute;
-         top: 60vh;
-     }
-    .hash{
-        display: block;
-        padding-top: 54vw; 
-        line-height: 1.4em;
-        font-size: 6vw;
-    }
+        /*レスポンシブ*/
+         @media screen and (max-width: 750px) { 
+             .body {
+                margin: 0 auto;
+                width: 100vw;
+            }
+             header img{
+                z-index: 0;
+                min-width: 180%;
+                min-height: 100%;
+                height: auto;
+                padding-top: 0;
+                 padding-bottom: 0;
+                margin-right: 20%; 
+             }
+             header h1{
+                font-size: 7.6vw;
+                z-index: 1;
+                position: absolute;
+                top: 24%;
+                letter-spacing: 0.2em;
+                color: #fff;
+             }
+             .pink-bg{
+                content: "";
+                background-color: #D68592;
+                padding-bottom: 80vh;
+                padding-top: 4vh;
+            }
+             .about-title{
+/*                 height: 80vh;*/
+                     position: relative;
+                    display: block;
+                    margin: 40px 0;
+                    padding-bottom: 4em;
+             }
+             header p{
+                font-size: 2vw;
+                z-index: 1;
+                position: absolute;
+                top: 32%;
+                left: 50%;
+                -ms-transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                letter-spacing: 0.2em;
+                color: #fff;
+            }
+            .info{
+                 position: absolute;
+                 top: 60vh;
+             }
+            .hash{
+                display: block;
+                padding-top: 54vw; 
+                line-height: 1.4em;
+                font-size: 6vw;
+            }
 
-    .date{
-        display: block;
-        padding-top: 30vw;
-        line-height: 1.4em;
-        font-size: 0.32vw;
-    }
-    #about-m{
-        font-size: 2.8vw;
-        font-weight: bold;
-        line-height: 2.8em;
-        letter-spacing: 0.2em;
-        color: #111;
-        padding-bottom: 40px;
-    }
-    p .txt-white{
-        color: #fff;
-        line-height: 2.4em;
-        font-weight: normal;
-    }
-    p .txt-white2{
-        color: #fff;
-        line-height: 4.6em;
-        font-weight: normal;
-    }
-    #about-m-shita{
-        color: #fff;
-        font-size: 10vw;
-        opacity: 0.6;
-        padding-top: 8vh;
-        letter-spacing: 0.12em;
-    }
+            .date{
+                display: block;
+                padding-top: 30vw;
+                line-height: 1.4em;
+                font-size: 0.32vw;
+            }
+            #about-m{
+                font-size: 2.8vw;
+                font-weight: bold;
+                line-height: 2.8em;
+                letter-spacing: 0.2em;
+                color: #111;
+                padding-bottom: 40px;
+                height: 200vh;
+                margin: 40px 0; 
+            }
+            p .txt-white{
+                color: #fff;
+                line-height: 2.4em;
+                font-weight: normal;
+            }
+            p .txt-white2{
+                color: #fff;
+                line-height: 4.6em;
+                font-weight: normal;
+            }
+            #about-m-shita{
+                color: #fff;
+                font-size: 10vw;
+                opacity: 0.6;
+                padding-top: 8vh;
+                letter-spacing: 0.12em;
+            }
 
-    #about-m-ue{
-        position: absolute;
-        top: 10vh;
-        color: #000;
-        font-size: 2vw;
-        font-size: 2vw;
-        letter-spacing: 0.2em;
-    }
-    .event{
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        position: relative;
-    }
-    .event-content{
-        display: block;
-    }
-    .event-img img{
-        min-width: 100%;
-        z-index: 0;
-    }
-     
-    .event-txt p{
-        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
-        line-height: 2.2em;
-        font-size: 3.4vw;
-        text-align: left;
-        z-index: 2;
-    }
-    .event-txt{      
-        opacity; 0.4;
-        height: 50vh;
-        width: 90vw;
-        z-index: 2;
-        font-size: 0.6vw;
-        line-height: 0.8em;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        top: 20vh;
-        left: 4vw;
-        position: absolute;
-        color: #fff;
-    }
-     .event-bg{
-        content: "";
-        width: 100%;
-        height: 100vh;
-        max-height: 450px;
-        min-height: 320px;
-        position: absolute;
-        top: 240px;
-        left: 0;
-        background: #D68592;
-        z-index: -1;
-    }
-     
-     
-    h2{
-        font-size: 2.4em;
-        padding: 0;
-        margin-top: 2.4em; 
-    }
-     
-    h3{
-        font-size: 0.64em;
-        margin-top: -0.4em;
-        margin-bottom: 1em;
-    }
-/*
-     .contents-txt p{
-        font-size: 2.2em;
-        line-height: 1.6em;
-    }
-*/
-     .contents{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        position: relative;
-        height: 120vh;
-    }
-    .contents p{
-        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
-        line-height: 2.4em;
-        font-size: 0.86em;
-    }
-    .contents-content{
-        display: block;
-    }
-    .contents-img img{
-        min-width: 100%;
-        z-index: 0;
-    }
-     
+            #about-m-ue{
+                position: absolute;
+                top: 10vh;
+                color: #000;
+                font-size: 2vw;
+                font-size: 2vw;
+                letter-spacing: 0.2em;
+            }
+
+             .about-txt{
+                 height: 80vh;
+             }
+            .event{
+                margin: 0 auto;
+                padding: 0;
+                width: 100%;
+                position: relative;
+            }
+            .event-content{
+                display: block;
+            }
+            .event-img img{
+                min-width: 100%;
+                z-index: 0;
+            }
+
+            .event-txt p{
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+                line-height: 2.2em;
+                font-size: 3.4vw;
+                text-align: left;
+                z-index: 2;
+            }
+            .event-txt{      
+                opacity; 0.4;
+                height: 50vh;
+                width: 90vw;
+                z-index: 2;
+                font-size: 0.6vw;
+                line-height: 0.8em;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                top: 20vh;
+                left: 4vw;
+                position: absolute;
+                color: #fff;
+            }
+             .event-bg{
+                content: "";
+                width: 100%;
+                height: 100vh;
+                max-height: 450px;
+                min-height: 320px;
+                position: absolute;
+                top: 240px;
+                left: 0;
+                background: #D68592;
+                z-index: -1;
+            }
 
 
-    .contents-txt{      
-        opacity; 0.4;
-        height: 50vh;
-        width: 90vw;
-        z-index: 2;
-        line-height: 0.3em;
-        padding-top: 20px;
-        top: 34vh;
-        left: 4vw;
-        position: absolute;
-        color: #111;
-    }
-     
-     .contents-txt p{
-        line-height: 2.6em;
-        font-size: 3.4vw;
-        text-align: left;
-        z-index: 2;
-        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
-    }
-     .contents-bg{
-        content: "";
-        width: 100%;
-        height: 100vh;
-        max-height: 140vh;
-        min-height: 80vh;
-        position: fixed;
-        top: 240px;
-        left: 0;
-        background: #D68592;
-        z-index: -1;
-    }
-     .contents-txt span{
-        font-size: 3.4vw;
-        line-height: 2.2em;
-        letter-spacing: 0.24em;
-     }
-     .contents-title{
-        font-size: 4vw;
-        font-weight: bold;
-    }
-     
-     /*ゲスト*/
-    .guest{
-        padding-bottom: 2em;
-        padding-top: 40vh;
-        height: 300vh;
-    }
-    .guest h2{
-        font-size: 2.4em;
-        margin-top: 0;
-        color: #111;
-        letter-spacing: 0.08em;
-    }
-    .guest-content{
-        display: block;
-        content: "";
-        background: #D68592;
-        padding: 10vh 10vw;
-    }
-    .guest-prof{
-        width: 80vw;
-        padding: 0;
-        margin-bottom: 12vh;
-    }
-    .guest-prof img{
-        width: 80vw;
-    }
-    .guest-prof p{
-        padding-top: 0.6vw;
-        font-size: 3.4vw;
-        font-family:  "游ゴシック体", "Yu Gothic", "YuGothic"; 
-        line-height: 1.4em;
-        letter-spacing: 0.14em;
-    }
+            h2{
+                font-size: 2.4em;
+                padding: 0;
+                margin-top: 2.4em; 
+            }
 
-    .guest-prof a{
-        color: #fff;
-        font-size: 3.2vw;
-    }
+            h3{
+                font-size: 0.64em;
+                margin-top: -0.4em;
+                margin-bottom: 1em;
+            }
+             .contents{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                position: relative;
+                height: 120vh;
+            }
+            .contents p{
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+                line-height: 2.4em;
+                font-size: 0.86em;
+            }
+            .contents-content{
+                display: block;
+            }
+            .contents-img img{
+                min-width: 100%;
+                z-index: 0;
+            }
 
-    .guest-prof a:hover{
-        color: #eee;
-        font-size: 12px;
-    }
-     
-    .name{
-        font-size: 4.2vw;
-        letter-spacing: 0.2em;
-        color: #111;
-    }
-    .name-eng{
-        font-size: 4vw;
-        font-family: 'Avenir';
-        font-weight: 100;
-        opacity: 0.6;
-        color: #fff;
-    }
-     
-/*  schedule  */
-     .schedule{
-/*         margin-top: 40px; */
-/*         position: static;*/
-     }
-     .schedule img{
-         width: 100vw;
-         min-width: 100%;
-     }
-/*  res-place  */
-     .place-wrpper{
-         float: none;
-         margin: 0 2px;
-         display: inline-block;
-     }
-    .access-google-map{
-        width: 100%;
-        display: inline-block;
-    }
-    .place-txt{
-        text-align: left;
-        font-size: 0.6em;
-        width: 88vw;
-        padding: 2vw;
-    }
-    .place-txt p{
-        line-height:1.4em;
-    }
-    .place-txt span{
-        font-size: 1.6em;
-        padding-bottom: 1.4em;
-    }
-     .item{
-         width: 88vw;
-         margin: 20px auto;
-         font-size: 8px;
-     }
-     .item p{
-         text-align: left;
-         color: #999;
-     }
-     
-     
-     
-     .moushikomi{
-        margin: 10vh 10vh 10vw -4vw;
-    }
-     
-     
-     
-    
 
-     
-                
-        
-                 
-            /*　画面サイズ 499pxから適用　*/
-            /*.content {color: #red;}*/
-    }
-          
-          @media screen and (min-width: 500px) and (max-width: 999px) {
-            /*　画面サイズ 500pxから999pxまで適用　*/
-        
-            /*.content {color: #green;}*/
-          }
-          
-          @media screen and (min-width:1000px) {
-            /*　画面サイズ 1000px以上から適用　*/
-            /*.content {color: #blue;}*/
-          }
+
+            .contents-txt{      
+                opacity; 0.4;
+                height: 50vh;
+                width: 90vw;
+                z-index: 2;
+                line-height: 0.3em;
+                padding-top: 20px;
+                top: 34vh;
+                left: 4vw;
+                position: absolute;
+                color: #111;
+            }
+
+             .contents-txt p{
+                line-height: 2.6em;
+                font-size: 3.4vw;
+                text-align: left;
+                z-index: 2;
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+            }
+             .contents-bg{
+                content: "";
+                width: 100%;
+                height: 100vh;
+                max-height: 140vh;
+                min-height: 80vh;
+                position: fixed;
+                top: 240px;
+                left: 0;
+                background: #D68592;
+                z-index: -1;
+            }
+             .contents-txt span{
+                font-size: 3.4vw;
+                line-height: 2.2em;
+                letter-spacing: 0.24em;
+             }
+             .contents-title{
+                font-size: 4vw;
+                font-weight: bold;
+            }
+
+             /*ゲスト*/
+            .guest{
+                padding-bottom: 2em;
+                padding-top: 40vh;
+                height: 300vh;
+            }
+            .guest h2{
+                font-size: 2.4em;
+                margin-top: 0;
+                color: #111;
+                letter-spacing: 0.08em;
+            }
+            .guest-content{
+                display: block;
+                content: "";
+                background: #D68592;
+                padding: 10vh 10vw;
+            }
+            .guest-prof{
+                width: 80vw;
+                padding: 0;
+                margin-bottom: 12vh;
+            }
+            .guest-prof img{
+                width: 80vw;
+            }
+            .guest-prof p{
+                padding-top: 0.6vw;
+                font-size: 3.4vw;
+                font-family:  "游ゴシック体", "Yu Gothic", "YuGothic"; 
+                line-height: 1.4em;
+                letter-spacing: 0.14em;
+            }
+
+            .guest-prof a{
+                color: #fff;
+                font-size: 3.2vw;
+            }
+
+            .guest-prof a:hover{
+                color: #eee;
+                font-size: 12px;
+            }
+
+            .name{
+                font-size: 4.2vw;
+                letter-spacing: 0.2em;
+                color: #111;
+            }
+            .name-eng{
+                font-size: 4vw;
+                font-family: 'Avenir';
+                font-weight: 100;
+                opacity: 0.6;
+                color: #fff;
+            }
+
+        /*  schedule  */
+             .schedule img{
+                 width: 100vw;
+                 min-width: 100%;
+             }
+        /*  res-place  */
+             .place-wrpper{
+                 float: none;
+                 margin: 0 2px;
+                 display: inline-block;
+             }
+            .access-google-map{
+                width: 100%;
+                display: inline-block;
+            }
+            .place-txt{
+                text-align: left;
+                font-size: 0.6em;
+                width: 88vw;
+                padding: 2vw;
+            }
+            .place-txt p{
+                line-height:1.4em;
+            }
+            .place-txt span{
+                font-size: 1.6em;
+                padding-bottom: 1.4em;
+            }
+             .item{
+                 width: 88vw;
+                 margin: 20px auto;
+                 font-size: 8px;
+             }
+             .item p{
+                 text-align: left;
+                 color: #999;
+             }
+
+
+
+             .moushikomi{
+                margin: 10vh 10vh 10vw -4vw;
+            }
+
+
+
+
+
+
+
+
+
+                    /*　画面サイズ 499pxから適用　*/
+                    /*.content {color: #red;}*/
+            }
+
+                  @media screen and (min-width: 500px) and (max-width: 999px) {
+                    /*　画面サイズ 500pxから999pxまで適用　*/
+
+                    /*.content {color: #green;}*/
+                  }
+
+                  @media screen and (min-width:1000px) {
+                    /*　画面サイズ 1000px以上から適用　*/
+                    /*.content {color: #blue;}*/
+                  }
