@@ -49,7 +49,7 @@ li{
 
 
 .box{
-    height: auto;
+    height: 100%;
 }
 
 
@@ -602,7 +602,7 @@ footer{
                 box-sizing : border-box;
             }
              .box{
-                 height: auto;
+                 height: 100%;
              }
             .fuwat{
                  margin: 20px 0;
