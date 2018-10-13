@@ -594,7 +594,7 @@ footer{
 
 
         /*レスポンシブ*/
-         @media screen and (max-width: 750px) { 
+         @media screen and (max-width: 500px) { 
             .body {
                 margin: 0 auto;
                 width: 100vw;
@@ -725,7 +725,7 @@ footer{
             }
 
             .event-txt p{
-                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
                 line-height: 2.2em;
                 font-size: 3.4vw;
                 text-align: left;
@@ -778,7 +778,7 @@ footer{
                 height: 120vh;
             }
             .contents p{
-                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
                 line-height: 2.4em;
                 font-size: 0.86em;
             }
@@ -810,7 +810,7 @@ footer{
                 font-size: 3.4vw;
                 text-align: left;
                 z-index: 2;
-                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
             }
              .contents-bg{
                 content: "";
@@ -863,7 +863,7 @@ footer{
             .guest-prof p{
                 padding-top: 0.6vw;
                 font-size: 3.4vw;
-                font-family:  "游ゴシック体", "Yu Gothic", "YuGothic"; 
+                font-family:  "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo"; 
                 line-height: 1.4em;
                 letter-spacing: 0.14em;
             }
