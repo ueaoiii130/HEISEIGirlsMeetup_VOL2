@@ -11,6 +11,7 @@
     <!--  jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--  scrollify  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
     
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -89,18 +90,27 @@
            });
           });
         });
+        var windowWidth = $(window).width();
+        var option = {
+              section : '.box',
+              easing: "swing",
+              scrollSpeed: 600,
+              scrollbars: true,
+        };
+        var windowSm = 640;
+        if (windowWidth <= windowSm) {
+            //横幅640px以下のとき（つまりスマホ時）に行う処理を書く
+            $(function() {
+                $.scrollify(option); // scrollifyの実行
+            });
+        } else {
+            //横幅640px超のとき（タブレット、PC）に行う処理を書く
+        }
 
         
         // セクションごとのスクロール
-//            var option = {
-//              section : '.box',
-//              easing: "swing",
-//              scrollSpeed: 600,
-//              scrollbars: true,
-//            };
-//            $(function() {
-//                $.scrollify(option); // scrollifyの実行
-//            });
+
+
 
     </script> 
     
@@ -128,7 +138,7 @@
     
     <main>
     
-    <div class="pink-bg fuwat">
+    <div class="pink-bg fuwat box">
         
         <div class="about fuwat">
             
@@ -168,7 +178,7 @@
             </div> <!--fuwat-->
         </div>  <!--  pink-bg  -->
     
-    <div class="event fuwat">
+    <div class="event fuwat box">
         <h2>About</h2>
         <h3>イベント概要</h3>
         
@@ -203,7 +213,7 @@
         </div>
     </div>
     
-    <div class="contents fuwat">
+    <div class="contents fuwat box">
         <h2>Contents</h2>
         <h3>コンテンツ</h3>
         
@@ -238,7 +248,7 @@
     
     
     
-    <div class="guest fuwat">
+    <div class="guest fuwat box">
         <h2>Guest</h2>
         <h3>ゲスト情報</h3>
         
@@ -295,7 +305,7 @@
        </div> <!--     guest-content       -->
     </div>
     
-    <div class="schedule fuwat">
+    <div class="schedule fuwat box">
         <h2>Schedule</h2>
         <h3>開催概要</h3>
         
@@ -307,7 +317,7 @@
     
     
     
-    <div class="place-wrapper">
+    <div class="place-wrapper box">
     
     <div class="place fuwat">
         <h2>Detail</h2>
