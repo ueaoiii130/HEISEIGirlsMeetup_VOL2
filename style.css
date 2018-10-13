@@ -599,6 +599,9 @@ footer{
                 width: 100vw;
                 font-family: 'KabelLTStd', "游ゴシック体", "Yu Gothic", "YuGothic";
             }
+             .box{
+                 height: auto;
+             }
             .fuwat{
                  margin: 20px 0;
              }
