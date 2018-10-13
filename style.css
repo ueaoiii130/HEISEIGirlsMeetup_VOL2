@@ -620,14 +620,13 @@ footer{
              .pink-bg{
                 content: "";
                 background-color: #D68592;
-                padding-bottom: 8vh;
+                padding-bottom: 4vh;
                 padding-top: 4vh;
             }
              .about-title{
-/*                 height: 80vh;*/
                      position: relative;
                     display: block;
-                    margin: 40px 0;
+                    margin: 20px 0;
                     padding-bottom: 4em;
              }
              header p{
@@ -659,15 +658,20 @@ footer{
                 line-height: 1.4em;
                 font-size: 0.32vw;
             }
-            #about-m{
+            .about{
+                 height: 140vh;
+             }
+            .about-txt{
+                padding-bottom: 40px;
+                height: 200vh;
+                margin: 40px 0; 
+             }
+            .about-txt p{
                 font-size: 2.8vw;
                 font-weight: bold;
                 line-height: 2.8em;
                 letter-spacing: 0.2em;
-                color: #111;
-                padding-bottom: 40px;
-                height: 200vh;
-                margin: 40px 0; 
+                color: #111; 
             }
             p .txt-white{
                 color: #fff;
