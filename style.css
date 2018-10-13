@@ -755,7 +755,6 @@ footer{
                 width: 90vw;
                 z-index: 2;
                 font-size: 0.6vw;
-                line-height: 0.8em;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 top: 20vh;
@@ -781,12 +780,7 @@ footer{
                 padding: 0;
                 width: 100%;
                 position: relative;
-                height: 140vh;
-            }
-            .contents p{
-                font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
-                line-height: 2.4em;
-                font-size: 0.86em;
+                height: auto;
             }
             .contents-content{
                 display: block;
@@ -802,39 +796,39 @@ footer{
                 opacity; 0.4;
                 height: 50vh;
                 width: 90vw;
-                z-index: 2;
-                line-height: 0.3em;
                 padding-top: 20px;
-                top: 34vh;
+                top: 20vh;
                 left: 4vw;
                 position: absolute;
-                color: #111;
+                z-index: 2;
             }
 
              .contents-txt p{
-                line-height: 2.6em;
+                line-height: 2.2em;
                 font-size: 3.4vw;
                 text-align: left;
+                color: #111;
                 z-index: 2;
                 font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
             }
+             .contents-txt span{
+                font-size: 4.0vw;
+                line-height: 2.8em;
+                letter-spacing: 0.24em;
+                font-weight: bold;
+             }
              .contents-bg{
                 content: "";
                 width: 100%;
-                height: 100vh;
+                height: 60vh;
                 max-height: 140vh;
-                min-height: 80vh;
+                min-height: 60vh;
                 position: fixed;
                 top: 240px;
                 left: 0;
                 background: #D68592;
                 z-index: -1;
             }
-             .contents-txt span{
-                font-size: 3.4vw;
-                line-height: 2.2em;
-                letter-spacing: 0.24em;
-             }
              .contents-title{
                 font-size: 4vw;
                 font-weight: bold;
@@ -842,8 +836,9 @@ footer{
 
              /*ゲスト*/
             .guest{
+                margin-top: 40px; 
                 padding-bottom: 2em;
-                padding-top: 40vh;
+/*                padding-top: 40vh;*/
                 height: 300vh;
             }
             .guest h2{
