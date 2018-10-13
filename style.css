@@ -703,7 +703,8 @@ footer{
         font-size: 0.6vw;
         line-height: 0.8em;
         padding-top: 20px;
-        top: 34vh;
+        padding-bottom: 20px;
+        top: 20vh;
         left: 4vw;
         position: absolute;
         color: #fff;
@@ -744,14 +745,13 @@ footer{
         padding: 0;
         width: 100%;
         position: relative;
+        height: 120vh;
     }
-/*
     .contents p{
         font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
         line-height: 2.4em;
         font-size: 0.86em;
     }
-*/
     .contents-content{
         display: block;
     }
@@ -775,7 +775,7 @@ footer{
         color: #111;
     }
      
-         .contents-txt p{
+     .contents-txt p{
         line-height: 2.6em;
         font-size: 3.4vw;
         text-align: left;
