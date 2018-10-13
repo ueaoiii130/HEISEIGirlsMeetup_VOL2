@@ -738,31 +738,25 @@ footer{
         margin-top: -0.4em;
         margin-bottom: 1em;
     }
-     
-    
-   
-     
-    
-
-     
-     
-/*   detail  */
-
+/*
      .contents-txt p{
-        font-size: 0.64em;
+        font-size: 2.2em;
         line-height: 1.6em;
     }
+*/
      .contents{
         margin: 0 auto;
         padding: 0;
         width: 100%;
         position: relative;
     }
+/*
     .contents p{
         font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
         line-height: 2.4em;
         font-size: 0.86em;
     }
+*/
     .contents-content{
         display: block;
     }
@@ -774,7 +768,7 @@ footer{
 
     .contents-txt p{
         line-height: 2.6em;
-        font-size: 1.0vw;
+        font-size: 2vw;
         text-align: left;
         z-index: 2;
         font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
