@@ -695,9 +695,9 @@ footer{
                 position: absolute;
                 top: 10vh;
                 color: #000;
-                font-size: 2vw;
-                font-size: 2vw;
+                font-size: 3.4vw;
                 letter-spacing: 0.2em;
+                font-weight: bold;
             }
 
              .about-txt{
