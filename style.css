@@ -192,7 +192,9 @@ a span {
 .pink-bg{
     content: "";
     background-color: #D68592;
+    position: relative;
     padding-bottom: 80vh;
+    z-index: -6;
 }
 .about{
     content: "";
@@ -203,10 +205,9 @@ a span {
 
 .about-title{
     position: relative;
-    display: block;
-    margin: 40px 0;
     padding-bottom: 4em;
 }
+
 #about-m-shita{
     color: #fff;
     font-size: 10vw;
@@ -223,18 +224,16 @@ a span {
     font-size: 2vw;
     letter-spacing: 0.2em;
 }
-#about-m{
+.about-txt{
     font-size: 18px;
     font-weight: bold;
     line-height: 2.8em;
     letter-spacing: 0.2em;
     color: #111;
     padding-bottom: 40px;
-}
-
-.about-txt{
     height: 80vh;
 }
+
 p .txt-white{
     color: #fff;
     line-height: 2.4em;
@@ -601,6 +600,9 @@ footer{
                 width: 100vw;
                 font-family: 'KabelLTStd', "游ゴシック体", "Yu Gothic", "YuGothic";
             }
+            .fuwat{
+                 margin: 20px 0;
+             }
              header img{
                 z-index: 0;
                 min-width: 180%;
@@ -621,8 +623,12 @@ footer{
              .pink-bg{
                 content: "";
                 background-color: #D68592;
+                height: 100%;
+                 padding: 0;
+/*
                 padding-bottom: 4vh;
                 padding-top: 4vh;
+*/
             }
              .about-title{
                 position: relative;
@@ -630,43 +636,14 @@ footer{
                 margin: 20px 0;
                 padding-bottom: 0;
              }
-             header p{
-                font-size: 2vw;
-                z-index: 1;
-                position: absolute;
-                top: 32%;
-                left: 50%;
-                -ms-transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
-                letter-spacing: 0.2em;
-                color: #fff;
-            }
-            .info{
-                 position: absolute;
-                 top: 60vh;
-             }
-            .hash{
-                display: block;
-                padding-top: 54vw; 
-                line-height: 1.4em;
-                font-size: 6vw;
-            }
-
-            .date{
-                display: block;
-                padding-top: 30vw;
-                line-height: 1.4em;
-                font-size: 0.32vw;
-            }
-            .about{
-                 height: 140vh;
+             .about{
+                 height: 100vh;
              }
             .about-txt{
-                padding-top: 20px;
+/*                padding-top: 20px;*/
                 padding-bottom: 40px;
                 height: 200vh;
-                margin: 40px 0; 
+                margin: 32px 0; 
              }
             .about-txt p{
                 font-size: 2.8vw;
@@ -702,9 +679,36 @@ footer{
                 font-weight: bold;
             }
 
-             .about-txt{
-                 height: 80vh;
+             header p{
+                font-size: 2vw;
+                z-index: 1;
+                position: absolute;
+                top: 32%;
+                left: 50%;
+                -ms-transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                letter-spacing: 0.2em;
+                color: #fff;
+            }
+            .info{
+                 position: absolute;
+                 top: 60vh;
              }
+            .hash{
+                display: block;
+                padding-top: 54vw; 
+                line-height: 1.4em;
+                font-size: 6vw;
+            }
+
+            .date{
+                display: block;
+                padding-top: 30vw;
+                line-height: 1.4em;
+                font-size: 0.32vw;
+            }
+            
             .event{
                 margin: 0 auto;
                 padding: 0;
