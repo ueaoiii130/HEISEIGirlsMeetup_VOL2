@@ -18,6 +18,7 @@ body{
     width: 100%;
     overflow: hidden;
     min-width: 100vw;
+    box-sizing : border-box;
 }
 @font-face {
   font-family: 'KabelLTStd';
@@ -598,6 +599,7 @@ footer{
                 margin: 0 auto;
                 width: 100vw;
                 font-family: 'KabelLTStd', "游ゴシック体", "Yu Gothic", "YuGothic";
+                box-sizing : border-box;
             }
              .box{
                  height: auto;
