@@ -674,7 +674,7 @@ footer{
         font-size: 2vw;
         letter-spacing: 0.2em;
     }
-      .event{
+    .event{
         margin: 0 auto;
         padding: 0;
         width: 100%;
@@ -688,10 +688,9 @@ footer{
         z-index: 0;
     }
      
-
     .event-txt p{
         font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
-        line-height: 2.6em;
+        line-height: 1.4em;
         font-size: 3.4vw;
         text-align: left;
         z-index: 2;
@@ -741,7 +740,7 @@ footer{
     }
 */
      .contents{
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
         width: 100%;
         position: relative;
