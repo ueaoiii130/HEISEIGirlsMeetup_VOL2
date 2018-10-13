@@ -48,9 +48,11 @@ li{
 }
 
 
+/*
 .box{
-    height: 200vh;
+    height: auto;
 }
+*/
 
 
 .fadeInDown {
@@ -601,10 +603,6 @@ footer{
                 font-family: 'KabelLTStd', "游ゴシック体", "Yu Gothic", "YuGothic";
                 box-sizing : border-box;
             }
-             .box{
-/*                 height: 100%;*/
-                 height: 200vh;
-             }
             .fuwat{
                  margin: 20px 0;
              }
