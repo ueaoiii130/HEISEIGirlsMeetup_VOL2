@@ -680,11 +680,6 @@ footer{
         width: 100%;
         position: relative;
     }
-    .event p{
-        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
-        line-height: 2.4em;
-        font-size: 0.86em;
-    }
     .event-content{
         display: block;
     }
@@ -695,8 +690,9 @@ footer{
      
 
     .event-txt p{
+        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
         line-height: 2.6em;
-        font-size: 1.0vw;
+        font-size: 3.4vw;
         text-align: left;
         z-index: 2;
     }
