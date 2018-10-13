@@ -448,7 +448,9 @@ p .txt-white2{
 
 
 /*Schedule*/
-
+.schedule{
+    width: 100vw;
+}
 .schedule img{
     width: 40vw;
 }
