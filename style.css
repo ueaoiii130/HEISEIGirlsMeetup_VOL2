@@ -240,24 +240,24 @@ p .txt-white2{
     font-weight: normal;
 }
 
-.detail{
-    margin: 0 auto;
+.event{
+    margin: 20px auto;
     position: relative;
     height: 100vh;
 }
-.detail p{
+.event p{
     font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
     line-height: 2.4em;
     font-size: 0.86em;
 }
-.detail-content{
+.event-content{
     display: flex;
 }
 
-.detail-bg{
+.event-bg{
     content: "";
     width: 100%;
-    height: 40vw;
+    height: 80vh;
     max-height: 450px;
     min-height: 320px;
     position: fixed;
@@ -267,18 +267,18 @@ p .txt-white2{
     z-index: -1;
 }
 
-.detail-img img{
+.event-img img{
     width: 50vw;
     float: left;
     z-index: 1;
 }
-.detail-txt{
+.event-txt{
     padding-top: 132px;
     position: absolute;
     left: 54vw;
 
 }
-.detail-txt p{
+.event-txt p{
     line-height: 2.6em;
     font-size: 1.0vw;
     text-align: left;
@@ -318,7 +318,7 @@ p .txt-white2{
     margin-left: 40px; 
     content: "";
     width: 100%;
-    height: 40vw;
+    height: 80vh;
     max-height: 450px;
     min-height: 320px;
     position: fixed;
@@ -357,6 +357,7 @@ p .txt-white2{
     padding-bottom: 4em;
     padding-top: 0.3em;
     height: 100vh;
+    z-index: 1;
 }
 .guest h2{
     font-size: 2.4em;
@@ -439,23 +440,20 @@ p .txt-white2{
     padding-bottom: 1.4em;
 }
 
+.item{
+    line-height: 2.2em;
+    font-size: 1.2vw;
+}
 
 
 
 /*Schedule*/
 
-.schedule-content{
-/*    display: flex;*/
-}
-
 .schedule img{
     width: 40vw;
 }
 
-.item{
-    line-height: 2.2em;
-    font-size: 1.2vw;
-}
+
 
 
 /*お申し込みボタン*/
@@ -582,26 +580,25 @@ footer{
 }
 
 .socialIcon img{
-  width: 32px;
-  padding: 2px;
+    width: 32px;
+    padding: 2px;
     margin-bottom:20px; 
 }
 
 
 /*レスポンシブ*/
-
  @media screen and (max-width: 750px) { 
      .body {
         margin: 0 auto;
         width: 100vw;
     }
-     
      header img{
         z-index: 0;
-        min-width: 100%;
+        min-width: 180%;
         min-height: 100%;
-         height: 100vh;
-         padding-top: 0; 
+        height: auto;
+        padding-top: 0;
+        margin-right: 20%; 
      }
      header h1{
         font-size: 7.6vw;
@@ -613,58 +610,21 @@ footer{
      }
      
      header p{
-    font-size: 2vw;
-    z-index: 1;
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-    letter-spacing: 0.2em;
-    color: #fff;
-}
-     .info{
+        font-size: 2vw;
+        z-index: 1;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        letter-spacing: 0.2em;
+        color: #fff;
+    }
+    .info{
          position: absolute;
          top: 60vh;
      }
-     
-     #about-m{
-    font-size: 2.8vw;
-    font-weight: bold;
-    line-height: 2.8em;
-    letter-spacing: 0.2em;
-    color: #111;
-    padding-bottom: 40px;
-    }
-    p .txt-white{
-        color: #fff;
-        line-height: 2.4em;
-        font-weight: normal;
-    }
-    p .txt-white2{
-        color: #fff;
-        line-height: 4.6em;
-        font-weight: normal;
-    }
-     
-    #about-m-shita{
-    color: #fff;
-    font-size: 10vw;
-    opacity: 0.6;
-    padding-top: 8vh;
-    letter-spacing: 0.12em;
-    }
-
-    #about-m-ue{
-        position: absolute;
-        top: 10vh;
-        color: #000;
-        font-size: 2vw;
-        font-size: 2vw;
-        letter-spacing: 0.2em;
-    }
-
     .hash{
         display: block;
         padding-top: 54vw; 
@@ -678,7 +638,93 @@ footer{
         line-height: 1.4em;
         font-size: 0.32vw;
     }
+    #about-m{
+        font-size: 2.8vw;
+        font-weight: bold;
+        line-height: 2.8em;
+        letter-spacing: 0.2em;
+        color: #111;
+        padding-bottom: 40px;
+    }
+    p .txt-white{
+        color: #fff;
+        line-height: 2.4em;
+        font-weight: normal;
+    }
+    p .txt-white2{
+        color: #fff;
+        line-height: 4.6em;
+        font-weight: normal;
+    }
+    #about-m-shita{
+        color: #fff;
+        font-size: 10vw;
+        opacity: 0.6;
+        padding-top: 8vh;
+        letter-spacing: 0.12em;
+    }
 
+    #about-m-ue{
+        position: absolute;
+        top: 10vh;
+        color: #000;
+        font-size: 2vw;
+        font-size: 2vw;
+        letter-spacing: 0.2em;
+    }
+      .event{
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        position: relative;
+    }
+    .event p{
+        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+        line-height: 2.4em;
+        font-size: 0.86em;
+    }
+    .event-content{
+        display: block;
+    }
+    .event-img img{
+        min-width: 100%;
+        z-index: 0;
+    }
+     
+
+    .event-txt p{
+        line-height: 2.6em;
+        font-size: 1.0vw;
+        text-align: left;
+        z-index: 2;
+    }
+    .event-txt{      
+        opacity; 0.4;
+        height: 50vh;
+        width: 90vw;
+        z-index: 2;
+        font-size: 0.6vw;
+        line-height: 0.8em;
+        padding-top: 20px;
+        top: 34vh;
+        left: 4vw;
+        position: absolute;
+        color: #fff;
+    }
+     .event-bg{
+        content: "";
+        width: 100%;
+        height: 80vh;
+        max-height: 450px;
+        min-height: 320px;
+        position: absolute;
+        top: 240px;
+        left: 0;
+        background: #D68592;
+        z-index: -1;
+    }
+     
+     
     h2{
         font-size: 2.4em;
         padding: 0;
@@ -692,86 +738,18 @@ footer{
     }
      
     
-    .detail{
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        position: relative;
-    }
-    .detail p{
-        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
-        line-height: 2.4em;
-        font-size: 0.86em;
-    }
-    .detail-content{
-        display: block;
-    }
-    .detail-img img{
-        min-width: 100%;
-        z-index: 0;
-    }
+   
      
+    
 
-    .detail-txt p{
-        line-height: 2.6em;
-        font-size: 1.0vw;
-        text-align: left;
-        z-index: 2;
-    }
-    .detail-txt{      
-        opacity; 0.4;
-        height: 50vh;
-        width: 90vw;
-        z-index: 2;
-        font-size: 0.6vw;
-        line-height: 0.8em;
-        padding-top: 20px;
-        top: 34vh;
-        left: 4vw;
-        position: absolute;
-        color: #fff;
-    }
-     .detail-bg{
-        content: "";
-        width: 100%;
-        height: 40vw;
-        max-height: 450px;
-        min-height: 320px;
-        position: absolute;
-        top: 240px;
-        left: 0;
-        background: #D68592;
-        z-index: -1;
-    }
      
-     .access-google-map{
-    width: 100%;
-    display: inline-block;
-    }
-    .place-txt{
-        text-align: left;
-        font-size: 0.6em;
-        width: 100vw;
-        padding: 0;
-    }
-    .place-txt p{
-        line-height:1.4em;
-    }
-    .place-txt span{
-        font-size: 1.6em;
-        padding-bottom: 1.4em;
-    }
-     .contents{
-         margin: 0 auto;
-         padding:0;
-     }
+     
+/*   detail  */
+
      .contents-txt p{
         font-size: 0.64em;
         line-height: 1.6em;
     }
-     
-     
-/*   detail  */
      .contents{
         margin: 0 auto;
         padding: 0;
@@ -797,6 +775,7 @@ footer{
         font-size: 1.0vw;
         text-align: left;
         z-index: 2;
+        font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
     }
     .contents-txt{      
         opacity; 0.4;
@@ -814,49 +793,30 @@ footer{
      .contents-bg{
         content: "";
         width: 100%;
-        height: 40vw;
-        max-height: 450px;
-        min-height: 320px;
-        position: absolute;
+        height: 80vh;
+        max-height: 100vh;
+        min-height: 80vh;
+        position: fixed;
         top: 240px;
         left: 0;
         background: #D68592;
         z-index: -1;
     }
-     
-     
-/*
-     .contents-img img{
-        min-width: 100%;
-        z-index: 0;
+     .contents-txt span{
+        font-size: 3.2em;
+        line-height: 2.2em;
+        letter-spacing: 0.24em;
+     }
+     .contents-title{
+        font-size: 2em;
+        font-weight: bold;
     }
      
-     .contents-bg{
-    content: "";
-    width: 100%;
-    height: 40vw;
-    max-height: 450px;
-    min-height: 320px;
-    position: absolute;
-    top: 60vh;
-    left: 10vw;
-    background: #D68592;
-    z-index: -1;
-    }
-    .contents-txt{
-        padding-top: 132px;
-        position: absolute;
-        left: 4vw;
-        top: 40vh;
-        margin-bottom: 40vh;
-    }
-*/
-
-    /*ゲスト*/
+     /*ゲスト*/
     .guest{
         padding-bottom: 2em;
-        padding-top: 0.3em;
-        height: 100vh;
+        padding-top: 40vh;
+        height: 300vh;
     }
     .guest h2{
         font-size: 2.4em;
@@ -888,17 +848,16 @@ footer{
 
     .guest-prof a{
         color: #fff;
-        font-size: 3,2vw;
+        font-size: 3.2vw;
     }
 
     .guest-prof a:hover{
         color: #eee;
         font-size: 12px;
     }
-
+     
     .name{
         font-size: 4.2vw;
-    /*    font-weight: bold;*/
         letter-spacing: 0.2em;
         color: #111;
     }
@@ -909,15 +868,56 @@ footer{
         opacity: 0.6;
         color: #fff;
     }
-
-    .moushikomi{
-        margin: 10vh 10vh 10vw -4vw;
-    }
      
+/*  schedule  */
+     .schedule{
+/*         margin-top: 40px; */
+/*         position: static;*/
+     }
      .schedule img{
          width: 100vw;
          min-width: 100%;
      }
+/*  res-place  */
+     .place-wrpper{
+         float: none;
+         margin: 0 2px;
+         display: inline-block;
+     }
+    .access-google-map{
+        width: 100%;
+        display: inline-block;
+    }
+    .place-txt{
+        text-align: left;
+        font-size: 0.6em;
+        width: 88vw;
+        padding: 2vw;
+    }
+    .place-txt p{
+        line-height:1.4em;
+    }
+    .place-txt span{
+        font-size: 1.6em;
+        padding-bottom: 1.4em;
+    }
+     .item{
+         width: 88vw;
+         margin: 20px auto;
+         font-size: 8px;
+     }
+     .item p{
+         text-align: left;
+         color: #999;
+     }
+     
+     
+     
+     .moushikomi{
+        margin: 10vh 10vh 10vw -4vw;
+    }
+     
+     
      
     
 
