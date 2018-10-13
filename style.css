@@ -610,7 +610,10 @@ footer{
         letter-spacing: 0.2em;
         color: #fff;
      }
-     
+     .about-m{
+         height: 20vh;
+         margin: 8px 0;
+     }
      header p{
         font-size: 2vw;
         z-index: 1;
