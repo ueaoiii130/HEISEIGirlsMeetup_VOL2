@@ -594,7 +594,9 @@ footer{
             .fuwat{
                  margin: 20px 0;
              }
-
+             .box{
+                 height: auto;
+             }
              h2{
                 color: #111;
                 letter-spacing: 0.08em;
