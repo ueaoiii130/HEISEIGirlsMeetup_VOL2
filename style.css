@@ -886,8 +886,12 @@ footer{
                 opacity: 0.6;
                 color: #fff;
             }
-
+            
         /*  schedule  */
+             .schedule{
+                 margin: 40px 0;
+                width: 100vw;
+            }
              .schedule img{
                  width: 100vw;
                  min-width: 100%;
@@ -951,7 +955,7 @@ footer{
                 font-size: 12px;
                 color: #888;
                 letter-spacing: 0.4em;
-                padding: 80px 0 60px 0;
+                padding: 80px 0 0 0;
                 opacity: 0.5;
                 height: 32vh;
             }
