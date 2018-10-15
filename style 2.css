@@ -31,7 +31,7 @@ h2{
     margin-top : 2em;
     color: #111;
     letter-spacing: 0.08em;
-
+    
 }
 h3{
     font-size: 0.8em;
@@ -95,7 +95,7 @@ header{
 }
 header img{
     width: 90vw;
-    padding-top: 40px;
+    padding: 40px 0;
     z-index: 0;
 }
 
@@ -140,7 +140,7 @@ header p{
 
 .hash{
     display: block;
-    padding-top: 74vw;
+    padding-top: 74vw; 
     padding-left: 0;
     padding-right: 0;
     line-height: 1.4em;
@@ -176,15 +176,14 @@ a span {
 .pink-bg{
     content: "";
     background-color: #D68592;
-    position: absolute;
-    height: 250vh;
-    padding: 0;
+    position: relative;
+    padding-bottom: 80vh;
     z-index: -6;
 }
 .about{
     content: "";
     position: relative;
-    height: 250vh;
+    height: 200vh;
 }
 
 
@@ -305,7 +304,7 @@ p .txt-white2{
 
 
 .contents-bg{
-    margin-left: 40px;
+    margin-left: 40px; 
     content: "";
     width: 100%;
     height: 80vh;
@@ -372,7 +371,7 @@ p .txt-white2{
 .guest-prof p{
     padding-top: 1.2em;
     font-size: 0.74vw;
-    font-family:  "游ゴシック体", "Yu Gothic", "YuGothic";
+    font-family:  "游ゴシック体", "Yu Gothic", "YuGothic"; 
     line-height: 1.4em;
     letter-spacing: 0.14em;
 }
@@ -574,13 +573,13 @@ footer{
 .socialIcon img{
     width: 32px;
     padding: 2px;
-    margin-bottom:20px;
+    margin-bottom:20px; 
 }
 
 
         /*レスポンシブ*/
-         @media screen and (max-width: 700px) {
-
+         @media screen and (max-width: 500px) {
+             
              a{
                 text-decoration: none;
                 color: #fff;
@@ -594,13 +593,13 @@ footer{
             .fuwat{
                  margin: 20px 0;
              }
-
+             
              h2{
                 color: #111;
                 letter-spacing: 0.08em;
                 font-size: 2.4em;
                 margin-top: 2.4em;
-
+                 
                 padding: 20px 0;
             }
 
@@ -608,7 +607,7 @@ footer{
                 color: #111;
                 font-size: 0.64em;
                 font-weight: bold;
-                margin-bottom: 1em;
+                margin-bottom: 1em; 
                 margin-top: -0.4em;
             }
              .header{
@@ -616,7 +615,7 @@ footer{
                 height: 100%;
                 margin: 0;
                 padding: 40px 0;
-
+                 
              }
              header img{
                 z-index: 0;
@@ -625,7 +624,7 @@ footer{
                 height: auto;
                 padding-top: 0;
                  padding-bottom: 0;
-                margin-right: 20%;
+                margin-right: 20%; 
              }
              header h1{
                 font-size: 7.6vw;
@@ -635,6 +634,63 @@ footer{
                 letter-spacing: 0.2em;
                 color: #fff;
              }
+             .pink-bg{
+                content: "";
+                background-color: #D68592;
+                height: 100%;
+                padding: 0;
+            }
+             .about-title{
+                position: relative;
+                display: block;
+                margin: 20px 0;
+                padding-bottom: 0;
+             }
+             .about{
+                 height: 80vh;
+/*                 margin: 20vh 0;*/
+                 padding: 16px 0;
+             }
+            .about-txt{
+/*                padding-top: 20px;*/
+                padding-bottom: 40px;
+                height: 200vh;
+                margin: 10px 0; 
+             }
+            .about-txt p{
+                font-size: 2.8vw;
+                font-weight: bold;
+                line-height: 2.8em;
+                letter-spacing: 0.2em;
+                color: #111; 
+            }
+            p .txt-white{
+                color: #fff;
+                line-height: 2.4em;
+                font-weight: normal;
+            }
+            p .txt-white2{
+                color: #fff;
+                line-height: 4.6em;
+                font-weight: normal;
+            }
+            #about-m-shita{
+                color: #fff;
+                font-size: 10vw;
+                opacity: 0.6;
+                padding-top: 16%;
+                letter-spacing: 0.12em;
+            }
+
+            #about-m-ue{
+                position: absolute;
+                top: 20%;
+                color: #000;
+                font-size: 3.4vw;
+                letter-spacing: 0.2em;
+                font-weight: bold;
+            }
+
              header p{
                 font-size: 2vw;
                 z-index: 1;
@@ -653,7 +709,7 @@ footer{
              }
             .hash{
                 display: block;
-                padding-top: 54vw;
+                padding-top: 54vw; 
                 line-height: 1.4em;
                 font-size: 6vw;
             }
@@ -664,63 +720,7 @@ footer{
                 line-height: 1.4em;
                 font-size: 0.32vw;
             }
-
-             .pink-bg{
-                content: "";
-                background-color: #D68592;
-                position: absolute;
-                height: 120vh;
-                padding: 0;
-                z-index: -1;
-                margin: 0;
-            }
-             .about-title{
-                position: relative;
-                display: block;
-                margin: 6px 0;
-                padding-bottom: 0;
-             }
-             .about{
-                 height: 100vh;
-             }
-            .about-txt{
-                padding-bottom: 40px;
-                height: 200vh;
-             }
-            .about-txt p{
-                font-size: 2.8vw;
-                font-weight: bold;
-                line-height: 2.8em;
-                letter-spacing: 0.2em;
-                color: #111;
-            }
-            p .txt-white{
-                color: #fff;
-                line-height: 2.4em;
-                font-weight: normal;
-            }
-            p .txt-white2{
-                color: #fff;
-                line-height: 4.6em;
-                font-weight: normal;
-            }
-            #about-m-shita{
-                color: #fff;
-                font-size: 10vw;
-                opacity: 0.4;
-                padding-top: 2em;
-                letter-spacing: 0.12em;
-            }
-
-            #about-m-ue{
-                position: absolute;
-                top: 6.4em;
-                color: #000;
-                font-size: 3.4vw;
-                letter-spacing: 0.2em;
-            }
-
-
+            
             .event{
                 margin: 0 auto;
                 padding: 0;
@@ -742,7 +742,7 @@ footer{
                 text-align: left;
                 z-index: 2;
             }
-            .event-txt{
+            .event-txt{      
                 opacity; 0.4;
                 height: 50vh;
                 width: 90vw;
@@ -773,7 +773,7 @@ footer{
                 padding: 0;
                 width: 100%;
                 position: relative;
-                height: 100vh;
+                height: auto;
             }
             .contents-content{
                 display: block;
@@ -785,7 +785,7 @@ footer{
 
 
 
-            .contents-txt{
+            .contents-txt{      
                 opacity; 0.4;
                 height: 50vh;
                 width: 90vw;
@@ -829,7 +829,7 @@ footer{
 
              /*ゲスト*/
             .guest{
-                margin-top: 40px;
+                margin-top: 40px; 
                 padding-bottom: 2em;
 /*                padding-top: 40vh;*/
                 height: 300vh;
@@ -857,7 +857,7 @@ footer{
             .guest-prof p{
                 padding-top: 0.6vw;
                 font-size: 3.4vw;
-                font-family:  "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+                font-family:  "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo"; 
                 line-height: 1.4em;
                 letter-spacing: 0.14em;
             }
@@ -923,38 +923,23 @@ footer{
                  color: #999;
              }
 
+
+
              .moushikomi{
                 margin: 10vh 10vh 10vw -4vw;
-                padding: 40px 40px 40px 16px;
-            }
-             .moushikomi a{
-                 font-size: 0.8em;
-             }
-            .button {
-            width: 40%;
-              position: relative;
-              display: inline-block;
-              padding: 0.65em 2em;
-              border: 2px solid #333;
-              color: #333;
-             letter-spacing: 0.2em;
-            font-weight: bold;
-              text-decoration: none;
-              text-align: center;
-              -webkit-transition: .3s ease-in-out;
-              transition: .3s ease-in-out;
-            }
-             footer{
-                text-align: center;
-                font-size: 12px;
-                color: #888;
-                letter-spacing: 0.4em;
-                padding: 80px 0 60px 0;
-                opacity: 0.5;
-                height: 32vh;
             }
 
-        }
+
+
+
+
+
+
+
+
+                    /*　画面サイズ 499pxから適用　*/
+                    /*.content {color: #red;}*/
+            }
 
                   @media screen and (min-width: 500px) and (max-width: 999px) {
                     /*　画面サイズ 500pxから999pxまで適用　*/
