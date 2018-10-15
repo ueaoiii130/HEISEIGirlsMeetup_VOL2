@@ -756,6 +756,10 @@ footer{
                 text-align: left;
                 z-index: 2;
             }
+             .event-title{
+                 font-size: 6vw;
+                font-weight: bold;
+             }
             .event-txt{
                 opacity; 0.4;
                 height: 50vh;
