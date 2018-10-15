@@ -852,7 +852,8 @@ footer{
             }
              .contents-title{
                 font-size: 6vw;
-                font-weight: bold;
+                font-weight: bold; 
+                letter-spacing: 0.2em;
             }
 
              /*ゲスト*/
