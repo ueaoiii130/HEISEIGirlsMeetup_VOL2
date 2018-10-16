@@ -241,6 +241,13 @@ p .txt-white2{
     font-weight: normal;
 }
 
+span.message{
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    line-height: 4.2em;
+}
+
 .event{
     margin: 20px auto;
     position: relative;
@@ -459,8 +466,14 @@ p .txt-white2{
 }
 .schedule img{
     width: 32vw;
+    padding-top: 2em; 
 }
-
+.schedule p{
+    color: #222;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+}
 
 
 
@@ -626,8 +639,8 @@ footer{
                 color: #111;
                 font-size: 0.64em;
                 font-weight: bold;
-                margin-bottom: 1em;
-                margin-top: -0.4em;
+                margin-bottom: 1.6em;
+                margin-top: -1.8em;
             }
              .header{
                 position: relative;
@@ -738,6 +751,13 @@ footer{
                 font-size: 3.4vw;
                 letter-spacing: 0.2em;
             }
+             
+             span.message{
+                 color: #fff;
+                 font-size: 22px;
+                 letter-spacing: 0.2em;
+                 line-height: 1.2em;
+             }
 
 
             .event{
@@ -912,13 +932,20 @@ footer{
             
         /*  schedule  */
              .schedule{
-                 margin: 40px 0;
+                margin: 40px 0;
                 width: 100vw;
             }
              .schedule img{
                  width: 100vw;
                  min-width: 100%;
              }
+             
+             .schedule p{
+                color: #444;
+                font-size: 0.6em;
+                line-height: 1.8em;
+                font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+            }
         /*  res-place  */
              .place-wrpper{
                  float: none;
