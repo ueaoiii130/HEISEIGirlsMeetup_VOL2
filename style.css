@@ -188,7 +188,7 @@ a span {
     content: "";
     background-color: #D68592;
     position: absolute;
-    height: 250vh;
+    height: 260vh;
     padding: 0;
     z-index: -6;
 }
