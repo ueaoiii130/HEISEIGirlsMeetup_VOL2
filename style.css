@@ -159,8 +159,13 @@ header p{
 }
 
 .date{
+    background-color: #fff;
+    color: #000;
     display: block;
-    padding-top: 50vw;
+    margin-top: 50vw;
+    padding-top: 1.2em;
+    padding-bottom: 1.0em;
+    width: 400px;
     padding-left: 0;
     padding-right: 0;
     line-height: 1.4em;
@@ -659,7 +664,7 @@ footer{
                 margin-right: 20%;
              }
              header h1{
-                font-size: 7.6vw;
+                font-size: 8.8vw;
                 z-index: 1;
                 position: absolute;
                 top: 24%;
@@ -667,7 +672,7 @@ footer{
                 color: #fff;
              }
              header p{
-                font-size: 2vw;
+                font-size: 2.8vw;
                 z-index: 1;
                 position: absolute;
                 top: 32%;
@@ -677,6 +682,7 @@ footer{
                 transform: translate(-50%,-50%);
                 letter-spacing: 0.2em;
                 color: #fff;
+                font-weight: bold;
             }
             .info{
                  position: absolute;
@@ -684,24 +690,36 @@ footer{
              }
             .hash{
                 display: block;
-                padding-top: 54vw;
+                padding-top: 16vw;
                 line-height: 1.4em;
                 font-size: 6vw;
                 font-weight: bold;
+                text-align: left;
+                padding-left: 20px;
             }
 
             .date{
+                background-color: #fff;
+                color: #000;
                 display: block;
-                padding-top: 30vw;
+                margin-top: 36vw;
                 line-height: 1.4em;
-                font-size: 0.32vw;
+                font-size: 5.8vw;
+                padding: 14px;
             }
+             .date span{
+                 font-weight: bold;
+                 font-size: 3.6vw;
+                 font-family: "游ゴシック体", "Yu Gothic", "YuGothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+                 letter-spacing: 0.2em;
+                 line-height: 0;
+             }
 
              .pink-bg{
                 content: "";
                 background-color: #D68592;
                 position: absolute;
-                height: 120vh;
+                height: 110vh;
                 padding: 0;
                 z-index: -1;
                 margin: 0;
@@ -876,7 +894,6 @@ footer{
             .guest{
                 margin-top: 40px;
                 padding-bottom: 2em;
-/*                padding-top: 40vh;*/
                 height: 300vh;
             }
             .guest h2{
@@ -892,7 +909,7 @@ footer{
                 padding: 10vh 10vw;
             }
             .guest-prof{
-                width: 80vw;
+                width: 84vw;
                 padding: 0;
                 margin-bottom: 12vh;
             }
