@@ -158,6 +158,26 @@ header p{
     font-size: calc(42px + 0.42vw) ;
 }
 
+
+.sticker img{
+    width: 100%;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
+}
+.sticker{
+    width: 180px;
+    position: fixed;
+    bottom: 40px;
+    z-index: 7;
+    right: 10vh;
+}
+.sticker:hover{
+    width: 180px;
+    position: fixed;
+    bottom: 36px;
+    z-index: 7;
+    right: 10vh;
+}
+
 .date{
     background-color: #fff;
     color: #000;
@@ -464,6 +484,16 @@ span.message{
     font-size: 1.2vw;
 }
 
+/*sponsor*/
+.sponsor{
+    width: 100vw;
+    margin: 40px 0;
+}
+.sponsor img{
+    width: 320px;
+    margin: 20px;
+/*    box-shadow: 0 0 10px #E3E2E0;*/
+}
 
 
 /*Schedule*/
