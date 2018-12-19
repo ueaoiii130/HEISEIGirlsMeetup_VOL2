@@ -846,6 +846,7 @@ footer{
                 font-size: 4.4vw;
                 font-weight: bold; 
                 letter-spacing: 0.2em;
+                color: #fff;
              }
             .event-txt{
                 opacity; 0.4;
@@ -855,10 +856,10 @@ footer{
                 font-size: 0.6vw;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                top: 20vh;
+                top: 40vh;
                 left: 4vw;
                 position: absolute;
-                color: #fff;
+                color: #888;
             }
              .event-bg{
                 content: "";
