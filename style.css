@@ -565,7 +565,7 @@ h4{
 }
 .staff p{
     font-size: 0.86em;
-    font-weight: bold;
+/*    font-weight: bold;*/
     font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
     line-height: 3.2em;   
 }
