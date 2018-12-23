@@ -555,6 +555,24 @@ font-weight: bold;
 }
 
 
+/*スタッフ紹介*/
+h4{
+    font-family: 'Avenir';
+    font-weight: 40;
+    font-size: 1.4em;
+    color: gainsboro;
+    line-height: 2em;
+}
+.staff p{
+    font-size: 0.86em;
+    font-weight: bold;
+    font-family: "游ゴシック体", "Yu Gothic", "YuGothic";
+    line-height: 3.2em;   
+}
+.staff img{
+    width: 700px;
+}
+
 
 footer{
     text-align: center;
@@ -568,6 +586,7 @@ footer p{
     line-height: 4em;
     font-size: 1.2em;
 }
+
 
 /*button*/
 .btn{
